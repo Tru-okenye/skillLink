@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "330325054527",
+    "project_id": "skilllink-78c53",
+    "storage_bucket": "skilllink-78c53.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330325054527:android:af27449e5a53a2a83d548a",
+        "android_client_info": {
+          "package_name": "com.example.skilllink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330325054527-l6iqj4qvh7jp4rhu3lv13kl6jo3bmqnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYOwn_EXE4R8eKhv1MhieRWYPtqK5JC9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330325054527-l6iqj4qvh7jp4rhu3lv13kl6jo3bmqnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330325054527:android:fac62a7fb5fbdc243d548a",
+        "android_client_info": {
+          "package_name": "com.skilllink.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330325054527-l6iqj4qvh7jp4rhu3lv13kl6jo3bmqnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYOwn_EXE4R8eKhv1MhieRWYPtqK5JC9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330325054527-l6iqj4qvh7jp4rhu3lv13kl6jo3bmqnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
