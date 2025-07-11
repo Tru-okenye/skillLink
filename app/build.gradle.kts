@@ -72,13 +72,16 @@ dependencies {
     // Required Compose setup
     implementation (libs.androidx.runtime.livedata)
 
-
+    // Jetpack DataStore (Preferences)
+    implementation("androidx.datastore:datastore-preferences:1.1.7")
 //    implementation (libs.stream.webrtc.android)
 //    implementation(libs.google.webrtc)
 
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.mesibo.api:webrtc:1.0.5")
     implementation("com.google.dagger:hilt-android:2.51")
+
+    implementation("io.coil-kt:coil-compose:2.5.0")
 
 
 

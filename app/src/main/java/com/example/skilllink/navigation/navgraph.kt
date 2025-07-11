@@ -20,12 +20,14 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.skilllink.data.viewmodel.VideoCallViewModel
+import com.example.skilllink.profile.SettingsScreen
 import com.example.skilllink.video.VideoCallRoute
 import com.example.skilllink.video.VideoCallScreen
 
 
 @Composable
-fun AuthNavHost(navController: NavHostController,
+fun AuthNavHost(navController: NavHostController,isDarkTheme: Boolean,
+                onToggleTheme: () -> Unit,
                  authViewModel: AuthViewModel, startDestination: String = "login") {
     NavHost(
         navController = navController,
@@ -81,5 +83,22 @@ fun AuthNavHost(navController: NavHostController,
         }
 
 
+
+        composable("settings") {
+            SettingsScreen(
+                isDarkTheme = isDarkTheme,
+                onToggleTheme = onToggleTheme,
+                onEditProfile = { navController.navigate("profile") },
+//                onChangePassword = { navController.navigate("change_password") },
+//                onNotifications = { navController.navigate("messages_screen") },
+                onLogout = {
+                    authViewModel.logout()
+                    navController.navigate("login") {
+                        popUpTo(0)
+                    }
+                },
+                onBack = { navController.popBackStack() }
+            )
+        }
     }
 }
